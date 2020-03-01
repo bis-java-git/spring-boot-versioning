@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ApiController {
 
-    @GetMapping(value = "/api" , produces="application/apiversion.app-v1+json")
+    @GetMapping(value = "/api" , produces="application/apiversion-v1+json")
     public String apiWithContentTypeV1() {
         return "called API with the content type with V1!";
     }
 
-    @GetMapping(value = "/api" , produces="application/apiversion.app-v2+json")
+    @GetMapping(value = "/api" , produces="application/apiversion-v2+json")
     public String apiWithContentTypeV2() {
         return "called API with the content type V2!";
     }
